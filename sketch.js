@@ -40,5 +40,6 @@ function draw() {
 function keyPressed(){
 	if(keyCode===UP_ARROW){
 		Matter.Body.applyForce(paperObj.body,paperObj.body.position,{x:120,y:-145});
+		paperObj.render.visible = false;
 	}
 }
